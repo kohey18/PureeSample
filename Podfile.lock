@@ -1,0 +1,24 @@
+PODS:
+  - CocoaLumberjack (1.9.2):
+    - CocoaLumberjack/Extensions (= 1.9.2)
+  - CocoaLumberjack/Core (1.9.2)
+  - CocoaLumberjack/Extensions (1.9.2):
+    - CocoaLumberjack/Core
+  - Puree (1.0.0):
+    - YapDatabase (~> 2.5.4)
+  - YapDatabase (2.5.4):
+    - YapDatabase/standard (= 2.5.4)
+  - YapDatabase/common (2.5.4):
+    - CocoaLumberjack (~> 1)
+  - YapDatabase/standard (2.5.4):
+    - YapDatabase/common
+
+DEPENDENCIES:
+  - Puree
+
+SPEC CHECKSUMS:
+  CocoaLumberjack: 628fca2e88ef06f7cf6817309aa405f325d9a6fa
+  Puree: e92ae29f9e7d48a308b5261a318d0564c383431e
+  YapDatabase: 52370b36f692e23c41c86e60f3bbf81b1c8ae44a
+
+COCOAPODS: 0.36.3

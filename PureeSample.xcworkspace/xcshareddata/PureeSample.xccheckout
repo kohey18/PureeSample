@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>D513E32A-AA2D-46DD-91A8-9B909E1392BC</string>
+	<key>IDESourceControlProjectName</key>
+	<string>PureeSample</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>3C49A6AB475A3FEBE60FAB426AB89A45F9EB500F</key>
+		<string>github.com:kohey18/PureeSample.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>PureeSample.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>3C49A6AB475A3FEBE60FAB426AB89A45F9EB500F</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:kohey18/PureeSample.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>3C49A6AB475A3FEBE60FAB426AB89A45F9EB500F</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>3C49A6AB475A3FEBE60FAB426AB89A45F9EB500F</string>
+			<key>IDESourceControlWCCName</key>
+			<string>PureeSample</string>
+		</dict>
+	</array>
+</dict>
+</plist>

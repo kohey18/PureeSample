@@ -32,7 +32,7 @@
     
     AppDelegate* delegate = [[UIApplication sharedApplication] delegate];
     // ログ生成
-    [delegate.logger postLog:@{@"action_id": [NSString stringWithFormat:@"%ld", _btn.tag ], @"result": result} tag:@"action.log"];
+    [delegate.logger postLog:@{@"action": [NSString stringWithFormat:@"%ld", _btn.tag ], @"result": result} tag:@"action.log"];
     
     // アラートビュー生成
     UIAlertView *alter = [[UIAlertView alloc] initWithTitle:@"Results" message:result delegate:nil cancelButtonTitle:nil otherButtonTitles:@"OK", nil];

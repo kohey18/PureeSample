@@ -7,6 +7,7 @@
 //
 
 #import <Puree.h>
+#import <AFNetworking.h>
 
 @interface LogServerOutput : PURBufferedOutput
 

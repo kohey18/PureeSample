@@ -24,11 +24,26 @@
     NSMutableArray *logs = [NSMutableArray new];
     for (PURLog *log in chunk.logs) {
         NSMutableDictionary *logDict = [log.userInfo mutableCopy];
-        logDict[@"date"] = log.date;
+        NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+        dateFormatter.dateFormat = @"yyyy-MM-dd HH:mm";
+        NSString *formattedDateString = [dateFormatter stringFromDate:log.date];
+        logDict[@"date"] = formattedDateString;
         [logs addObject:logDict];
     }
     
-    NSLog(@"logs %@", logs);
+    /*
+     以下、通信部分。
+     TODO: 同期処理にしない。非同期でどんどんログ収集サーバに投げるようにする。
+     */
+    
+    NSString *urlStr = @"http://log-server-ip:log-server-port/log.http";
+    AFHTTPRequestOperationManager* manager = [AFHTTPRequestOperationManager manager];
+    manager.requestSerializer = [AFJSONRequestSerializer serializer];
+    [manager POST:urlStr parameters:logs success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        NSLog(@"response: %@", responseObject);
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        NSLog(@"Error: %@", error);
+    }];
 }
 
 @end
